@@ -75,9 +75,9 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nazwa🖤\n' // full name
+            + 'FN:si ganteng\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+1 (254) 212-3926\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6282225491446:+62 822-2549-1446\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
@@ -266,7 +266,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["12542123926@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["6282225491446@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -797,7 +797,7 @@ case 'timer':
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', members_id, true)
+					mentions('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 RANS BOT 〙', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -810,7 +810,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 RANS BOT 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -823,7 +823,7 @@ case 'timer':
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 RANS BOT 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -836,7 +836,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 RANS BOT〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -849,7 +849,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙')
+					reply('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 RANS BOT 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -885,7 +885,7 @@ case 'timer':
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 RANS BOT 」*\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
