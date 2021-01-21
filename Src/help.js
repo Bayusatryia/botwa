@@ -5,6 +5,7 @@ const help = (prefix) => {
 ◪ *INFO*
   ❏ Prefix: 「  ${prefix}  」
   ❏ Creator: RANS
+https://chat.whatsapp.com/COgU6HrLS7f509yOir3d2R
 ◪ *ABOUT*
   │
   ├─ ❏ ${prefix}info
